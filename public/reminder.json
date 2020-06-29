@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Tom",
+        "timezone": "PST",
+        "reminder_time": {
+            "Monday": "08:30 AM",
+            "Tuesday": "10:00 AM",
+            "Wednesday": "",
+            "Thursday": "08:30 AM",
+            "Friday": "09:30 AM",
+            "Saturday": "09:30 AM",
+            "Sunday": "10:40 AM"
+        },
+        "content": [
+            {
+                "level": 1,
+                "type": "SMS",
+                "minutes_shift": 60,
+                "message": "Hi {name}! This is test",
+                "phone_number": "101029201292",
+                "expected_response": "Yes, yes, yes sir, on my way",
+                "wait_minutes": 5,
+                "next_level": 2
+            },
+            {
+                "level": 2,
+                "type": "Voice",
+                "minutes_shift": 50,
+                "message": "wave.wav",
+                "phone_number": "101029201292",
+                "expected_response": "Yes, yes, yes sir, on my way",
+                "wait_minutes": 5,
+                "next_level": 0
+            }
+        ]
+    },
+    {
+        "name": "John",
+        "timezone": "PST",
+        "reminder_time": {
+            "Monday": "08:30 AM",
+            "Tuesday": "10:00 AM",
+            "Wednesday": "",
+            "Thursday": "08:30 AM",
+            "Friday": "09:30 AM",
+            "Saturday": "",
+            "Sunday": ""
+        },
+        "content": [
+            {
+                "level": 1,
+                "type": "SMS",
+                "minutes_shift": 60,
+                "message": "Hi {name}! This is test",
+                "phone_number": "101029201292",
+                "expected_response": "Yes, yes, yes sir, on my way",
+                "wait_minutes": 5,
+                "next_level": 2
+            },
+            {
+                "level": 2,
+                "type": "Voice",
+                "minutes_shift": 50,
+                "message": "wave.wav",
+                "phone_number": "101029201292",
+                "expected_response": "Yes, yes, yes sir, on my way",
+                "wait_minutes": 5,
+                "next_level": 3
+            },
+            {
+                "level": 3,
+                "type": "SMS",
+                "minutes_shift": 50,
+                "message": "Hi Boss",
+                "phone_number": "102325454521",
+                "expected_response": "Yes, yes, yes sir, on my way",
+                "wait_minutes": 5,
+                "next_level": 0
+            }
+        ]
+    }
+]
